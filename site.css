@@ -15,3 +15,6 @@ html.immersion-root{scroll-snap-type:y proximity;scroll-padding-top:0}.chapter,.
 /* Shared navigation: 64px desktop, 56px mobile. */
 .site-header .brand{gap:10px}.site-header .brand-seal{width:34px;height:36px;font-size:13px;letter-spacing:1px;padding-left:1px;outline-offset:2px}.site-header .brand-name{font-size:20px;letter-spacing:4px}.site-header .brand small{font-size:7px;letter-spacing:2px;margin-top:4px}.site-header .book-nav{height:36px;min-height:36px;display:inline-flex;align-items:center;padding:0 18px;font-size:13px}.site-header .menu-button{width:44px;min-height:44px}
 @media(max-width:700px){.site-header .brand{gap:9px}.site-header .brand-seal{width:28px;height:30px;font-size:11px;letter-spacing:.5px}.site-header .brand-name{font-size:18px;letter-spacing:3px}.site-header .brand small{font-size:6px;letter-spacing:1.6px;margin-top:3px}.site-header .book-nav{display:none}}
+
+/* Make the home footer a reachable resting point after the final chapter. */
+body[data-page="home"] .site-footer{scroll-snap-align:end}
